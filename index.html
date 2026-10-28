@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="曾灿的 AI 产品作品集，展示从业务需求到产品验证的五个项目。">
+  <meta name="color-scheme" content="light">
+  <title>曾灿的 AI 产品作品集</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳转到正文</a>
+  <header class="site-header"><div class="nav-shell">
+    <a class="brand" href="#top" aria-label="曾灿作品集首页">曾灿<span> / AI 产品作品集</span></a>
+    <nav class="nav-links" aria-label="页面导航"><a href="#projects">项目目录</a><a href="#query">精选案例</a></nav>
+    <a class="nav-cta" href="assets/portfolio.pdf" download>下载作品集</a>
+  </div></header>
+  <main id="main">
+    <section class="hero" id="top"><div class="hero-inner">
+      <div class="hero-copy"><h1>从业务问题出发，<br><span>把想法变成<br>可验证的产品。</span></h1>
+        <p>有 B2B 电商运营经验，也有 AI 应用实践。关注真实需求、清晰的规则和可验证的结果。</p>
+        <div class="button-row"><a class="btn btn-primary" href="#projects">查看项目 <span aria-hidden="true">↗</span></a><a class="btn btn-secondary" href="assets/portfolio.pdf" download>下载 PDF</a></div>
+      </div>
+      <div class="hero-media"><img src="assets/cover.png" alt="玻璃与金属材质的抽象配图" fetchpriority="high"></div>
+    </div></section>
+
+    <section id="projects" class="project-index"><div class="wrap">
+      <div class="section-head"><h2>项目经历</h2><p>五个案例，记录从问题发现到方案验证的过程。</p></div>
+      <div class="project-list">
+        <a class="project-row" href="#query"><span class="project-num">01</span><div class="project-row-main"><h3>钉钉 / 企业微信智能商品查询助手</h3><p>把商品查询放进工作群，让价格和单位有据可查。</p></div><span class="status">钉钉内部试用</span><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="project-row" href="#fashion"><span class="project-num">02</span><div class="project-row-main"><h3>服装外贸 AI 图册与询盘助手</h3><p>整理商品图片、产品卡、多色展示和英文文案。</p></div><span class="status">技术 MVP</span><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="project-row" href="#resume"><span class="project-num">03</span><div class="project-row-main"><h3>AI 简历助手 MVP</h3><p>对照简历和岗位描述，找到真实的匹配依据。</p></div><span class="status">文本规则版</span><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="project-row" href="#dify"><span class="project-num">04</span><div class="project-row-main"><h3>Dify 跨境客服政策咨询工作流</h3><p>按市场和问题类型分流，遇到冲突转人工。</p></div><span class="status">路由检查</span><span class="arrow" aria-hidden="true">↗</span></a>
+        <a class="project-row" href="#batch"><span class="project-num">05</span><div class="project-row-main"><h3>商品图片批处理自动化工作流</h3><p>用货号批量复制模板、命名和分包。</p></div><span class="status">工作实践</span><span class="arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </div></section>
+
+    <section id="query" class="case case-query"><div class="wrap">
+      <div class="case-head"><div class="case-meta">01 / 钉钉内部试用与 V1 阶段验收</div><h2>钉钉 / 企业微信<br>智能商品查询助手</h2><p>让同事在工作群里查询商品，并让关键信息有依据。</p></div>
+      <div class="case-grid"><div class="case-copy"><h3>从一个实际问题开始</h3><p>同事需要在不同资料中查找并核对货号、价格、单位和交期；描述不完整时，还需要进一步确认商品。</p><h3>我负责什么</h3><p>提出需求、组织商品资料整理与核验，参与查询规则设计，设计测试题并组织群测，推动问题修复和验收。核心代码借助 Codex 等工具实现。</p></div>
+        <div class="case-visual"><h3>从提问到答复</h3><div class="flow" aria-label="查询路径示意"><div class="flow-step"><b>同事提出问题</b><span>输入货号或商品描述</span></div><div class="flow-step"><b>选择查询方式</b><span>完整货号查本地记录；描述不完整时 AI 找候选，再核对来源</span></div><div class="flow-step"><b>回复或确认</b><span>按规则提供信息；有歧义时进一步确认</span></div></div><p class="case-value">作用：将查找步骤带到工作群，让商品信息有记录可核对。</p><p class="caption">流程示意，非实际软件界面。</p></div>
+      </div>
+      <div class="metric-grid"><div class="metric"><strong>36 / 40</strong><span>题内容符合预期</span><small>2026 年 10 月 25 日，4 位同事完成固定 40 题钉钉群测。</small></div><div class="metric"><strong>0.925 秒</strong><span>平均响应时间</span><small>对应首次群测的 40 题，不代表每次查询。</small></div><div class="metric"><strong>1,178 条</strong><span>商品记录</span><small>来自两份来源数据，已组织整理与核验。</small></div><div class="metric"><strong>4 / 4</strong><span>问题复测通过</span><small>首次未通过的 4 题修复后单独复测，不与首测合并。</small></div></div>
+      <figure class="evidence"><div class="evidence-intro"><h3>一次真实的群内查询</h3><p>同事询问价格并要求现货；助手依据商品资料提示不满足现货要求，并提醒价格和供货需确认。</p></div><div class="chat-panel"><div><b>同事提问</b><img src="assets/chat-question.png" alt="已脱敏的钉钉提问截图，提问包含只要现货的要求" loading="lazy"></div><div><b>助手回复</b><img class="chat-reply" src="assets/chat-reply.png" alt="已脱敏的钉钉回复截图，提示不符合现货要求" loading="lazy"></div></div><figcaption>2026 年 10 月 22 日验收版截图；同一张截图的提问和回复分别裁切，灰色区域已遮盖身份和业务信息。不是 10 月 25 日的 40 题群测现场。</figcaption></figure>
+      <p class="note">项目已完成钉钉内部试用与 V1 阶段验收；长期使用率和整体节省工时尚未统计。2026 年 10 月 27 日记录本机相关服务不可达，当前演示状态待确认。企业微信历史使用与钉钉 V1 的验收分别记录。</p>
+    </div></section>
+
+    <section id="fashion" class="case case-fashion"><div class="wrap">
+      <div class="case-head"><div class="case-meta">02 / 技术 MVP</div><h2>服装外贸 AI 图册<br>与询盘助手</h2><p>把商品图片和基础信息整理成便于展示的销售素材。</p></div>
+      <div class="case-grid"><div class="case-copy"><h3>想解决的问题</h3><p>销售人员需要向海外客户展示款式、颜色等信息，手动整理图片和文案较繁琐，手机上也需要清晰的展示方式。</p><h3>我的参与</h3><p>提出外贸档口场景、首版范围和移动端约束；针对产品卡排版、图片比例和颜色输入提出反馈，参与局部使用和复测。代码和技术验证借助 Codex 完成。</p><p class="note">2026 年 9 月 11 日历史记录显示 134 项测试及构建通过；真实客户与完整业务流程仍待验证。询盘解析按当前求职口径列为规划。</p></div>
+      <div class="case-visual"><figure class="fashion-figure"><img src="assets/fashion-concept.png" alt="AI 生成的服装概念配图" loading="lazy"><figcaption>AI 生成的概念配图，不代表项目实际产出。</figcaption></figure></div></div>
+      <div class="flow" aria-label="素材整理流程示意"><div class="flow-step"><b>输入商品素材</b><span>商品图片、款式和颜色等基础信息</span></div><div class="flow-step"><b>整理展示内容</b><span>产品卡、多色图和英文文案</span></div><div class="flow-step"><b>人工检查和使用</b><span>查看、下载图片或复制文案</span></div></div><p class="case-value">作用：将分散的图片和信息整理为可检查的展示内容。</p>
+    </div></section>
+
+    <section id="resume" class="case case-resume"><div class="wrap">
+      <div class="case-head"><div class="case-meta">03 / P0 文本规则版</div><h2>AI 简历助手 MVP</h2><p>先找到真实匹配依据，再调整表达。</p></div>
+      <div class="case-grid"><div class="case-copy"><h3>把简历与岗位放在一起看</h3><p>求职者反复对照岗位要求和自己的经历，需要知道哪些内容能支持岗位要求，哪些信息还需要确认。</p><h3>我的参与</h3><p>确定自用场景、目标用户、首版流程和真实性要求。产品文档由 AI 协助整理，页面和规则借助 Codex 实现。</p></div><div class="case-visual"><h3>从输入到建议</h3><div class="flow"><div class="flow-step"><b>粘贴文本</b><span>简历和目标岗位描述</span></div><div class="flow-step"><b>规则对照</b><span>校验输入，展示匹配依据、待确认项和建议</span></div><div class="flow-step"><b>用户核对</b><span>复制结果并由本人修改</span></div></div><p class="case-value">作用：帮助求职者找到可表达的真实经历，不自动编造事实。</p><p class="caption">流程示意，非实际软件界面。</p></div></div>
+      <div class="split-panels"><div class="panel"><strong>1 份简历 × 5 类岗位描述</strong><p>用于历史场景验收，不等同于 5 位真实用户试用。</p></div><div class="panel"><strong>当前版本边界</strong><p>当前 P0 未接大模型、文件上传或 OCR，也暂无多人真实使用及采纳记录。</p></div></div>
+    </div></section>
+
+    <section id="dify" class="case case-dify"><div class="wrap">
+      <div class="case-head"><div class="case-meta">04 / 工作流设计与路由检查</div><h2>Dify 跨境客服<br>政策咨询工作流</h2><p>按市场和问题类型分流，让需要判断的情况交给人工。</p></div>
+      <div class="case-grid"><div class="case-copy"><h3>不同市场，按对应政策处理</h3><p>跨市场政策可能混用；当政策资料冲突，或问题需要订单操作权限时，应由人工判断。</p><h3>我的参与</h3><p>提出案例目标与工作流交付要求，提供脱敏业务背景；节点细化和技术校验由 AI 协助完成。</p></div><div class="case-visual"><h3>政策咨询路径</h3><div class="flow"><div class="flow-step"><b>选择市场与问题</b><span>例如美国退货政策</span></div><div class="flow-step"><b>分流政策来源</b><span>按市场和政策类型寻找对应资料</span></div><div class="flow-step"><b>答复或转人工</b><span>有依据时设计为引用政策答复；冲突或需操作时转人工</span></div></div><p class="caption">设计示意，不代表已运行的 Dify 界面。</p></div></div>
+      <p class="note">已完成 YAML 解析、节点连线和 10 组政策路由检查；尚未正式导入应用、调用模型完成问答或进行业务验收。</p>
+    </div></section>
+
+    <section id="batch" class="case case-batch"><div class="wrap">
+      <div class="case-head"><div class="case-meta">05 / 工作实践</div><h2>商品图片批处理<br>自动化工作流</h2><p>把复制、命名和打包的重复步骤整理成流程。</p></div>
+      <div class="case-grid"><div class="case-copy"><h3>我的参与</h3><p>我描述重复工作步骤，让 Claude 协助整理流程文档，再由 CodeBuddy 执行；处理后由我审核并分批上传。</p><p class="case-value">作用：减少手工复制、命名和打包的重复操作。结果仍需人工审核与上传。</p></div><div class="case-visual"><h3>处理过程</h3><div class="flow"><div class="flow-step"><b>读取货号</b><span>从 Excel 提取非空货号，按顺序去重</span></div><div class="flow-step"><b>复制并命名</b><span>按货号复制同一张模板图片</span></div><div class="flow-step"><b>打包与审核</b><span>ZIP 分包后，由本人检查并分批上传</span></div></div><p class="caption">流程示意。</p></div></div>
+      <div class="metric-grid"><div class="metric"><strong>约 3 小时</strong><span>上传前人工处理</span><small>单批约 5 万个按货号复制得到的图片文件。</small></div><div class="metric"><strong>约 5 分钟</strong><span>程序处理</span><small>不含后续人工审核和分批上传。</small></div></div>
+      <p class="note">以上耗时为本人确认的工作经验，当前没有独立计时日志。文件由同一模板复制得到，并非 5 万张不同的商品画面。</p>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="wrap"><div><strong>曾灿</strong><p>AI 产品 / AI 应用 / 产品助理</p></div><a href="#top">回到顶部 ↑</a></div></footer>
+</body>
+</html>
