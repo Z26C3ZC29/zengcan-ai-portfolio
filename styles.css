@@ -22,3 +22,5 @@
 @media(max-width:780px){.steps p,.value-list p{font-size:12px}.value-list h4{font-size:14px}.role-mini{padding-top:22px}.role-mini p{font-size:11px}}
 @media(max-width:560px){.steps p,.value-list p{font-size:12px}.role-mini{margin-top:24px;padding-top:20px;border-top:1px solid #edf2f8}.role-mini p{font-size:12px}.card-intro{font-size:12px}}
 html{scroll-behavior:auto}
+#copywriting .evidence-card{margin-top:30px}
+.skip-link:not(:focus){clip-path:inset(50%)}

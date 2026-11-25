@@ -1,6 +1,6 @@
 # 曾灿的 AI 产品作品集
 
-面向求职沟通的静态作品集，包含五个项目案例与 10 页 PDF 下载。
+面向求职沟通的静态作品集，包含六个项目案例与 11 页 PDF 下载。
 
 网站：https://z26c3zc29.github.io/zengcan-ai-portfolio/
 
